@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace TheApp.Controllers
 {
@@ -9,6 +10,9 @@ namespace TheApp.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            // some heavy work here
+            Thread.Sleep(1100);
+
             return new string[] { "value1", "value2" };
         }
 
