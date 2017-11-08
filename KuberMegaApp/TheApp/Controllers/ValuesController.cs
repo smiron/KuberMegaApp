@@ -11,7 +11,7 @@ namespace TheApp.Controllers
         public IEnumerable<string> Get()
         {
             // some heavy work here
-            Thread.Sleep(1100);
+            Thread.Sleep(1101);
 
             return new string[] { "value1", "value2" };
         }
