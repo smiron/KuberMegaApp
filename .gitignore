@@ -1,4 +1,4 @@
-TheApp/bin/
-TheApp/obj/
-.vs/
-obj/
+KuberMegaApp/TheApp/bin/
+KuberMegaApp/TheApp/obj/
+KuberMegaApp/.vs/
+KuberMegaApp/obj/

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: theapp-rc
+spec:
+  replicas: 1
+  selector:
+    app: theapp
+    zone: dev
+  template:
+    metadata:
+      labels:
+        app: theapp
+        zone: dev
+    spec:
+      containers:
+      - name: theapp-pod
+        image: smiron/theapp:latest
+        ports:
+        - containerPort: 80
