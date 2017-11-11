@@ -16,10 +16,10 @@ spec:
       labels:
         app: theapp
         zone: dev
-        version: 1.0.2
+        version: 1.0.3
     spec:
       containers:
       - name: theapp-pod
-        image: smiron/theapp:20171111073123
+        image: smiron/theapp:20171111073618
         ports:
         - containerPort: 80

@@ -9,7 +9,7 @@ namespace TheApp.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "1", "2", "3", "4" };
+            return new string[] { "1", "2", "3", "4", "5" };
         }
 
         [HttpGet("{id}")]
