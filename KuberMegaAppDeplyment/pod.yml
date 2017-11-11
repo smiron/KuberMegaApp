@@ -4,10 +4,10 @@ metadata:
   name: megaapp-pod
   labels:
     zone: dev
-    version: v1
+    version: v1.0.0
 spec:
   containers:
   - name: megaapp-ctr
-    image: smiron/theapp:latest
+    image: smiron/theapp:20171111042815
     ports:
     - containerPort: 80

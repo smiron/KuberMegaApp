@@ -1,13 +1,16 @@
-apiVersion: v1
-kind: ReplicationController
+apiVersion: apps/v1beta2
+kind: Deployment
 metadata:
-  name: theapp-rc
-spec:
-  replicas: 8
-  selector:
+  name: theapp-depl
+  labels:
     app: theapp
     zone: dev
-    version: 1.0.0
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: theapp
+      zone: dev
   template:
     metadata:
       labels:
