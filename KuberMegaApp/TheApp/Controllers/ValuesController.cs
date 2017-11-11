@@ -10,10 +10,7 @@ namespace TheApp.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            // some heavy work here
-            Thread.Sleep(1102);
-
-            return new string[] { "value1", "value2" };
+            return new string[] { "1", "2" };
         }
 
         [HttpGet("{id}")]
