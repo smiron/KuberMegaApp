@@ -5,7 +5,6 @@ metadata:
   labels:
     app: theapp
     zone: dev
-    version: 1.0.0
 spec:
   type: NodePort
   ports:
@@ -15,4 +14,3 @@ spec:
   selector:
     app: theapp
     zone: dev
-    version: 1.0.0
