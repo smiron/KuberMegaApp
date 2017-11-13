@@ -2,7 +2,7 @@ version: '3'
 
 services:
   theapp:
-    image: theapp
+    image: smiron/theapp:<containerVersion>
     build:
       context: ./TheApp
       dockerfile: Dockerfile
