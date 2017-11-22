@@ -16,7 +16,6 @@ spec:
       labels:
         app: theapp
         zone: dev
-        version: <containerVersion>
     spec:
       containers:
       - name: theapp-pod
